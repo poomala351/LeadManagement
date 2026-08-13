@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: LeadManagement
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: lead_management_db
+
+
+
+      servlet:
+        multipart:
+          max-file-size: 50MB
+          max-request-size: 50MB
+
+azure:
+  storage:
+    connection-string: ${AZURE_STORAGE_CONNECTION_STRING}
+    container-name: ${AZURE_STORAGE_CONTAINER}
